@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--加载配置文件-->
+    <properties resource="db.properties"></properties>
+    <!-- 基本配置 -->
+    <settings>
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
+    <!-- 别名: 映射文件resultType 省略简写类路径 -->
+    <typeAliases>
+        <!-- 每个单独的类取别名 -->
+        <!--<typeAlias type="" alias=""></typeAlias>-->
+
+        <!-- 给包下所有类取别名,别名就是类名 -->
+        <package name="com.zhiyou"/>
+    </typeAliases>
+</configuration>
